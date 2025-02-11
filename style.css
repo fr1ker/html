@@ -1,0 +1,22 @@
+/* Для добавления 3D-эффекта */
+img {
+    width: 500px;  /* Размер изображения */
+    height: auto;  /* Сохраняем пропорции */
+    transition: transform 0.6s;  /* Плавный переход */
+    transform-style: preserve-3d;  /* Сохраняем 3D-эффект */
+}
+
+img:hover {
+    transform: rotateY(180deg);  /* Поворот изображения по оси Y */
+}
+
+/* Чтобы добавить эффект глубины */
+body {
+    perspective: 1000px; /* Контейнер с перспективой для 3D-эффекта */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
